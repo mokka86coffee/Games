@@ -67,7 +67,9 @@ export default class App extends React.Component {
           <div className="puzzle">
             <div className="puzzle__word">{word}</div>
             <div className="puzzle__buttons">
-              <Btns {...{ handleBtnPress, pressed }} />
+              {title === "Main" ? (
+                <Btns {...{ handleBtnPress, pressed }} />
+              ) : null}
             </div>
           </div>
         </main>
