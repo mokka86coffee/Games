@@ -22,7 +22,6 @@ export default class App extends React.Component {
 
   handleBtnPress = ({ target: { innerText: val } }) => {
     let { word, hiddenWord, title, attempts, pressed } = this.state;
-
     if (title !== "Main") {
       return;
     }
