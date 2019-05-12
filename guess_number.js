@@ -81,7 +81,6 @@ export default class App extends React.Component {
 }
 
 var Btns = React.memo(({ handleBtnPress, pressed }) => {
-  console.log("Btns rendered");
   const Btns = Array(10)
     .fill(0)
     .map((_, i) => (
